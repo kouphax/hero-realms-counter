@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
     <meta name="theme-color" content="#000000" />
     <meta
       name="description"
@@ -25,9 +25,28 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>React App</title>
+    <link href="https://fonts.googleapis.com/css2?family=Passion+One&display=swap" rel="stylesheet">
+
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
+    <style>
+      html, body, #root {
+        margin: 0;
+        height:100%;
+      }
+
+      * {
+        user-select: none;
+      }
+
+      body {
+        font-family: 'Passion One', cursive;
+        color: #333;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+    </style>
     <div id="root"></div>
     <!--
       This HTML file is a template.
